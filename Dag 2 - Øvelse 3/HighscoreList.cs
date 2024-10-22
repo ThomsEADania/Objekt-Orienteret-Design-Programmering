@@ -29,7 +29,14 @@ namespace Dag_2___Øvelse_1
         /// <param name="score">Score object</param>
         public static void AddScore(Score score)
         {
-            scores[0] = score;
+            for (byte i = 0; i < scores.Length; i++)
+            {
+                if (scores[i] == null)
+                {
+                    scores[i] = score;
+                    break;
+                }
+            }
         }
         public static void PrintToScreen()
         {
