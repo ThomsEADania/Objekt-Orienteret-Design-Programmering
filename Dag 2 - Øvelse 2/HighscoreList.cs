@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dag_2___Øvelse_1
+namespace Dag_2___Øvelse_2
 {
     internal class HighscoreList
     {

@@ -4,32 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dag_2___Øvelse_1
+namespace Dag_2___Øvelse_3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             bool running = true;
-            
+
+            bool showPrompt = true;
+
             while (running)
             {
                 Console.Clear();
-                
-                HighscoreList.PrintToScreen();
 
-                Console.WriteLine("Input your name:");
+                showPrompt = !HighscoreList.PrintToScreen();
 
-                string inputName = Console.ReadLine();
+                string inputName;
+                int inputScore;
 
-                Console.WriteLine("Input your score:");
+                if (showPrompt)
+                {
+                    Console.WriteLine("Input your name:");
 
-                int inputScore = int.Parse(Console.ReadLine());
+                    inputName = Console.ReadLine();
+
+                    Console.WriteLine("Input your score:");
+
+                    inputScore = int.Parse(Console.ReadLine());
+                }
+                else
+                {
+                    break;
+                }
 
                 HighscoreList.AddScore(new Score(inputName, inputScore));
             }
-            
-
 
             Console.WriteLine("\nPress any key to close the program");
             Console.ReadKey();
