@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
-namespace Dag_1___Øvelse_5
+namespace Dag_1___Øvelse_6a
 {
     internal class Soldier
     {
@@ -135,6 +135,7 @@ namespace Dag_1___Øvelse_5
         }
         #endregion
 
+        #region Methods
         /// <summary>
         /// Increments soldier's x position
         /// </summary>
@@ -162,7 +163,9 @@ namespace Dag_1___Øvelse_5
 
             Console.ForegroundColor = ConsoleColor.Gray;
         }
+        #endregion
 
+        #region Constructors
         /// <summary>
         /// Soldier's constructor without parametres
         /// </summary>
@@ -181,5 +184,10 @@ namespace Dag_1___Øvelse_5
 
             Console.WriteLine("Created soldier with predefined health");
         }
+        public Soldier(Weapon weapon)
+        {
+            Console.WriteLine("Created soldier with a weapon");
+        }
+        #endregion
     }
 }

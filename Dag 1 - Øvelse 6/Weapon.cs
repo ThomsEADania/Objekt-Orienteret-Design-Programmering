@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dag_1___Øvelse_5
+namespace Dag_1___Øvelse_6a
 {
     internal class Weapon
     {
