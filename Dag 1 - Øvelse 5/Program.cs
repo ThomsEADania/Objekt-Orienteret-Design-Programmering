@@ -12,6 +12,7 @@ namespace Dag_1___Øvelse_5
         static void Main(string[] args)
         {
             Soldier soldier1 = new Soldier(); //Instanciates new Soldier object
+            Soldier soldier2 = new Soldier(150); //Instanciates new Soldier object with 150 health
 
             bool keepPlaying = true;
 
