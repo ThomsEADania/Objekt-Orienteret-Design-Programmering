@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
-namespace Dag_1___Øvelse_6b
+namespace Dag_1___Øvelse_6c
 {
     internal class Soldier
     {
@@ -38,7 +38,7 @@ namespace Dag_1___Øvelse_6b
         /// <summary>
         /// Soldier's weapon
         /// </summary>
-        private Weapon weapon;
+        private Weapon[] weapons = new Weapon[3];
 
         /// <summary>
         /// Soldier's position
@@ -171,30 +171,37 @@ namespace Dag_1___Øvelse_6b
         {
             Console.WriteLine("Driving a jeep");
         }
+        public void Pickup(Weapon weapon)
+        {
+            for (int i = 0; i < weapons.Length; i++)
+            {
+                if (weapons[i] == null)
+                {
+                    Console.WriteLine($"Picked up a {weapon.Name}");
+
+                    weapons[i] = weapon;
+                    
+                    break;
+                }
+                else if (weapons[weapons.Length - 1] != null)
+                {
+                    Console.WriteLine("Cannot pickup more weapons");
+                    break;
+                }
+            }
+        }
         #endregion
 
         #region Constructors
         /// <summary>
-        /// Soldier's constructor without parametres
+        /// Soldier's constructor with a weapon
         /// </summary>
-        public Soldier()
-        {
-            Console.WriteLine("Created soldier");
-        }
-
-        /// <summary>
-        /// Soldier's constructor with predefined health
-        /// </summary>
-        /// <param name="health">Soldier's health</param>
-        public Soldier(int health)
-        {
-            this.health = health;
-
-            Console.WriteLine("Created soldier with predefined health");
-        }
+        /// <param name="weapon">Soldier's starting weapon</param>
         public Soldier(Weapon weapon)
         {
-            Console.WriteLine("Created soldier with a weapon");
+            weapons[0] = weapon;
+
+            Console.WriteLine($"Created soldier with a {weapon.Name}");
         }
         #endregion
     }
