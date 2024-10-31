@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dag_2___Øvelse_4
+namespace Dag_2___Øvelse_5
 {
     internal class HighscoreList
     {
         #region Fields
-        private static Score[] scores = new Score[10]; //Instanciates new array of type Score
+        private static Score[] scores = new Score[1]; //Instanciates new array of type Score
         #endregion
 
         #region Properties
@@ -34,6 +34,8 @@ namespace Dag_2___Øvelse_4
                 if (scores[i] == null)
                 {
                     scores[i] = score;
+
+                    Array.Resize(ref scores, scores.Length + 1);
                     break;
                 }
             }
@@ -45,13 +47,6 @@ namespace Dag_2___Øvelse_4
         public static bool PrintToScreen()
         {
             bool arrayFull = false;
-
-            if (scores[scores.Length - 1] != null)
-            {
-                Console.WriteLine("Cannot store more scores");
-
-                arrayFull = true;
-            }
 
             for (byte i = 0; i < scores.Length; i++)
             {
