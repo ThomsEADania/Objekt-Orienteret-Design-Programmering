@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag 1 - Øvelse 6c", "Dag 1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag 1 - Øvelse 6d", "Dag 1 - Øvelse 6d\Dag 1 - Øvelse 6d.csproj", "{6E41A4BA-CBAD-4499-8EF4-A75BF9139126}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dag 2 - Øvelse 4", "Dag 2 - Øvelse 4\Dag 2 - Øvelse 4.csproj", "{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{6E41A4BA-CBAD-4499-8EF4-A75BF9139126}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E41A4BA-CBAD-4499-8EF4-A75BF9139126}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E41A4BA-CBAD-4499-8EF4-A75BF9139126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{EAC913AC-8825-44A9-AACE-A26A62887575} = {2558EF82-0339-4464-A209-4ADD99416416}
 		{F8B6A943-D9E4-44F4-87E1-1F6A0D83C247} = {2558EF82-0339-4464-A209-4ADD99416416}
 		{6E41A4BA-CBAD-4499-8EF4-A75BF9139126} = {2558EF82-0339-4464-A209-4ADD99416416}
+		{AC867C0A-A2B8-44EB-B83B-4431FCE30D1C} = {8CF97D62-6C84-4F56-B225-B297F2765CD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B1ED598-7089-4E87-8E6E-DD6C574D6EB9}
